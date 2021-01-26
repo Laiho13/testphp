@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form action="send-mail.php">
+    <h1>Formulaire de paiement : </h1>
+      <label>Nom : </label> <input type="text" required>
+        <br>
+        <br>
+      <label>Prénom : </label> <input type="text" required>
+        <br>
+        <br>
+        <label>Email :  </label> <input type="email" required>
+        <br>
+        <br>
+      <label for="pay-select">Choisir un type de paiement</label>
+      <select name="pay" id="pay-select" required>
+          <option value=""></option>
+          <option value="visa">Visa</option>
+          <option value="paypal">Paypal</option>
+          <option value="applepay">Apple Pay</option>
+      </select>
+         <br>
+         <br>
+         <label for="pet-select">Choisir un type d'abonnement
+         </label>
+         <select name="pets" id="month-select" required>
+          <option value="1mois"></option>
+             <option value="1mois">1 à 3mois</option>
+             <option value="3mois">3 à 6mois</option>
+             <option value="6mois">6mois ou plus </option>
+         </select>
+         <br>
+         <br>
+        <label>Message : </label>
+        <textarea name="message" required></textarea>
+        <br>
+        <br>  
+        <label>Prix : </label><p name="message"></p>
+        <button type="submit">VALIDER</button>
+  </form>
+</body>
+</html>
